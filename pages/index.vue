@@ -1,4 +1,5 @@
 <template>
+  {{home}}
   <ContentRenderer v-if="home" :value="home"/>
   <div v-else>test</div>
 </template>

@@ -3,9 +3,7 @@
 import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
   css: ['~/css/main.css'],
-  modules: [
-    '@nuxt/content',
-  ],
+  modules: ['@nuxt/content', '@nuxt/icon', '@nuxt/image'],
   devtools: { enabled: true },
   future: {
     compatibilityVersion: 4,
@@ -19,7 +17,12 @@ export default defineNuxtConfig({
         owner: 'offertevergelijker-nl',
         url: 'https://github.com/offertevergelijker-nl/ov-site'
       },
-      dev: true
+      dev: true,
+      watch: {
+        port: 4000,
+        showURL: true
+      }
+
     }
   },
 

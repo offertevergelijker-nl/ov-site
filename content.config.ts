@@ -6,7 +6,8 @@ export default defineContentConfig({
       type: 'page',
       source: {
         repository: 'https://github.com/offertevergelijker-nl/ov-site',
-        include: "content/**"
+        include: "content/**.md",
+        prefix: '/',
       },
     }),
   },
