@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pnpm-cache-pv
+  namespace: dev-ov-studio
+spec:
+  storageClassName: host-path
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteMany
+  hostPath:
+    path: /tmp/pnpm_cache # Adjust to a suitable location on your host
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: pnpm-cache-pvc
+  namespace: dev-ov-studio
+spec:
+  storageClassName: host-path
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 1Gi

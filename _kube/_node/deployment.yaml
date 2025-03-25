@@ -1,0 +1,56 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: dev-ov-studio
+  name: nuxt-studio-deployment
+  labels:
+    app: nuxt-studio
+  annotations:
+    ingress.kubernetes.io/ssl-redirect: "false"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nuxt-studio
+  template:
+    metadata:
+      labels:
+        app: nuxt-studio
+    spec:
+      imagePullSecrets:
+        - name: gitlab-registry
+      containers:
+        - name: node
+          image: 'registry.gitlab.com/offertevergelijker/ov-fe-common/ov-studio'
+          imagePullPolicy: 'Always'
+          ports:
+            - containerPort: 3000
+          volumeMounts:
+            - name: pnpm-cache
+              mountPath: /_pnpm_cache
+          resources:
+            limits:
+              cpu: 100m
+              memory: 256Mi
+            requests:
+              cpu: 25m
+              memory: 128Mi
+      volumes:
+        - name: pnpm-cache
+          persistentVolumeClaim:
+            claimName: pnpm-cache-pvc
+---
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: dev-ov-studio
+  labels:
+    app: node
+  name: nuxt-studio-service
+spec:
+  ports:
+    - port: 80
+      targetPort: 3000
+  selector:
+    app: nuxt-studio
+  type: ClusterIP
