@@ -4,6 +4,6 @@
 </template>
 <script lang="ts" setup>
 const route = useRoute();
-const { data: post } = await useAsyncData('content', () => queryCollection('content').path('/content' + route.path).all())
+const { data: post } = await useAsyncData('content', () => queryCollection('content').path(route.path).first())
 
 </script>
