@@ -6,14 +6,16 @@ metadata:
   name: nuxt-studio-ingress
   annotations:
     kubernetes.io/ingress.class: "nginx"
-    ingress.kubernetes.io/ssl-redirect: "true"
-    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
+    nginx.ingress.kubernetes.io/force-ssl-redirect: "false"
+    #ingress.kubernetes.io/ssl-redirect: "true"
+    #cert-manager.io/cluster-issuer: "letsencrypt-prod"
 spec:
   ingressClassName: "nginx"
-  tls:
-    - hosts:
-        - new.offertevergelijker.nl
-      secretName: prod-tls
+#  tls:
+#    - hosts:
+#        - new.offertevergelijker.nl
+#      secretName: prod-tls
   rules:
     - host: new.offertevergelijker.nl
       http:

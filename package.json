@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "@nuxt/content": "^3.4.0",
+    "@tailwindcss/vite": "^4.0.16",
     "nuxt": "^3.16.1",
+    "tailwindcss": "^4.0.16",
     "vite-plugin-vue-tracer": "^0.1.2"
   }
 }

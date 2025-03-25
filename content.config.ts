@@ -4,7 +4,10 @@ export default defineContentConfig({
   collections: {
     content: defineCollection({
       type: 'page',
-      source: '**',
+      source: {
+        repository: 'https://github.com/offertevergelijker-nl/ov-site',
+        include: "content/**"
+      },
     }),
   },
 })

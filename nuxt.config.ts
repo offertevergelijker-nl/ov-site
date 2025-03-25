@@ -1,5 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
+import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
+  css: ['~/css/main.css'],
   modules: [
     '@nuxt/content',
   ],
@@ -11,7 +14,18 @@ export default defineNuxtConfig({
   content: {
     preview: {
       api: 'https://api.nuxt.studio',
+      gitInfo: {
+        name: 'ov-site',
+        owner: 'offertevergelijker-nl',
+        url: 'https://github.com/offertevergelijker-nl/ov-site'
+      },
       dev: true
     }
-  }
+  },
+
+  vite: {
+    plugins: [
+      tailwindcss(),
+    ],
+  },
 })
