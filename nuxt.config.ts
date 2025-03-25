@@ -17,13 +17,7 @@ export default defineNuxtConfig({
         owner: 'offertevergelijker-nl',
         url: 'https://github.com/offertevergelijker-nl/ov-site'
       },
-      dev: true,
-      watch: {
-        port: 4000,
-        showURL: true
-      }
-
-    }
+    },
   },
 
   vite: {
