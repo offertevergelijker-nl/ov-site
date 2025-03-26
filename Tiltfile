@@ -5,7 +5,7 @@ allow_k8s_contexts('do-ams3-kubernetes-staging')
 
 docker_build(
     'registry.gitlab.com/offertevergelijker/ov-fe-common/ov-studio',
-    './',
+    '../',
     dockerfile='_kube/_node/Dockerfile',
     build_args={'BUILDKIT_INLINE_CACHE': '1'},
 )
