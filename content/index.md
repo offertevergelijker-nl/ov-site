@@ -1,3 +1,3 @@
 ::ui-button{type="primary"}
-Lorem ipsum
+Lorem ipsum stest rarwa
 ::
