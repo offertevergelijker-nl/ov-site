@@ -1,5 +1,14 @@
-::product-form{product-id=105}
+::inquiry-request-form{product-id=105 heading='test test'}
 
-#heading Test test
+#ratings
+Test
+
+#USPs
+
+- Point 1
+- Point 1
+- Point 1
+- Point 1
+- Point 1
 
 ::

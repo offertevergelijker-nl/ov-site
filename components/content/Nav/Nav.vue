@@ -3,7 +3,7 @@
     <div class="container mx-auto flex flex-wrap justify-between gap-y-4 items-center">
       <div class="bg-white">
         <div class="container">
-          <img src="public/offertevergelijker_logo.png" alt="test" class="h-10.5"/>
+          <img alt="test" class="h-10.5" src="public/offertevergelijker_logo.png"/>
         </div>
       </div>
       <nav class="bg-white">
@@ -22,4 +22,6 @@
   </div>
 </template>
 
-<script setup lang="ts" />
+<script lang="ts" setup>
+
+</script>

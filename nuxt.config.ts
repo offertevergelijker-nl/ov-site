@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 export default defineNuxtConfig({
-    extends: '../_common',
+    extends: ['../_common'],
     modules: ['@nuxt/content'],
     components: ['../_common/components'],
     devtools: {enabled: true},
@@ -19,11 +19,28 @@ export default defineNuxtConfig({
             },
         },
     },
+
     apollo: {
         clients: {
             default: {
-                httpEndpoint: 'https://new.offertevergelijker.nl/graphql'
+                httpEndpoint: process.env.ENVIRONMENT === 'local'
+                    ? process.env.LOCAL_URL ?? ''
+                    : process.env.DEV_URL ?? '',
+                inMemoryCacheOptions: {
+                    typePolicies: {
+                        FilterItem: {
+                            keyFields: ['id', 'category']
+                        }
+                    }
+                },
+                connectToDevTools: true
+            },
+        },
+        defaultOptions: {
+            $query: {
+                fetchPolicy: 'cache-and-network',
             }
         },
+        connectToDevTools: true
     },
 })
