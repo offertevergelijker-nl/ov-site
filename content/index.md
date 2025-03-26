@@ -1,5 +1,3 @@
-# Index page
-
-bla bla bla
-
-## Test test
+::ui-button{type="primary"}
+Lorem ipsum
+::
