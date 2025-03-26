@@ -3,7 +3,7 @@
 import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
   css: ['~/css/main.css'],
-  modules: ['@nuxt/content', '@nuxt/icon', '@nuxt/image'],
+  modules: ['@nuxt/content', '@nuxt/icon', '@nuxt/image', '@nuxtjs/apollo'],
   devtools: { enabled: true },
   future: {
     compatibilityVersion: 4,
@@ -20,9 +20,22 @@ export default defineNuxtConfig({
     },
   },
 
+  nitro:{
+    prerender:{
+      routes: ['/']
+    }
+  },
+
   vite: {
     plugins: [
       tailwindcss(),
     ],
+  },
+  apollo: {
+    clients: {
+      default: {
+        httpEndpoint: 'https://new.offertevergelijker.nl/graphql'
+      }
+    },
   },
 })
