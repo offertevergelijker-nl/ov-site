@@ -3,19 +3,19 @@
     <NuxtImg :src="imgUrl" class="absolute top-0 h-full w-full object-cover z-0" />
     <HeroContainer :width="containerWidth" class="bg-transparent relative z-20">
       <h2 class="text-6xl font-bold font-lato mb-4">
-        <ContentSlot name="heroTitle" unwrap="p" />
+        <slot name="heroTitle" mdc-unwrap="p"/>
       </h2>
-      <p class="text-2xl mb-8">Meer dan <span class="font-semibold"><ContentSlot name="heroCustomerCount" unwrap="p" /></span> mensen gingen je voor.</p>
-      <div class="flex justify-center gap-x-2 text-black mb-4">
-        <select>
+      <p class="text-2xl mb-8">Meer dan <span class="font-semibold"><slot name="heroCustomerCount" mdc-unwrap="p"/></span> mensen gingen je voor.</p>
+      <div class="flex justify-center gap-x-2 bg-white rounded w-fit text-black mx-auto p-1 mb-4">
+        <select class="px-2">
           <option>Kies je categorie</option>
         </select>
-        <form class="bg-white">
-          <input type="text" placeholder="Jouw postcode...">
-          <button>Vergelijk offertes</button>
+        <form class="flex">
+          <input type="text" placeholder="Jouw postcode..." class="px-3">
+          <UiButton type="primary">Vergelijk offertes</UiButton>
         </form>
       </div>
-      <p>Wij scoren een <ContentSlot name="heroReviewScore" unwrap="p" /> uit ruim <ContentSlot name="heroReviewCount" unwrap="p" /> klantbeoordelingen!</p>
+      <p>Wij scoren een <slot name="heroReviewScore" mdc-unwrap="p" /> uit ruim <slot name="heroReviewCount" mdc-unwrap="p" /> klantbeoordelingen!</p>
     </HeroContainer>
   </HeroWrapper>
 </template>

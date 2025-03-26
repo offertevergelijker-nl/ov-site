@@ -1,9 +1,9 @@
 <template>
   <div class="sticky top-0 bg-white shadow-lg py-4 z-[999]">
-    <div class="container flex flex-wrap justify-between gap-y-4 items-center">
+    <div class="container mx-auto flex flex-wrap justify-between gap-y-4 items-center">
       <div class="bg-white">
         <div class="container">
-          <img src="public/offertevergelijker_logo.png" alt="test" class="h-10"/>
+          <img src="public/offertevergelijker_logo.png" alt="test" class="h-10.5"/>
         </div>
       </div>
       <nav class="bg-white">

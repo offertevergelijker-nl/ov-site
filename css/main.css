@@ -2,9 +2,14 @@
 
 @source '../' ;
 
-@theme {
+@container  {
+    --margin: auto;
+    --padding: 1rem;
+}
 
+@theme {
     /* Fonts */
+    --font-sans: 'Roboto', 'helvetica', 'sans-serif';
 
     /* Base colors */
     --color-transparent: transparent;

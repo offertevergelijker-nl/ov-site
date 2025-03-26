@@ -1,8 +1,6 @@
 <template>
 <!--  {{home}}-->
-  <div v-if="home" class="container mx-auto">
-    <ContentRenderer :value="home"/>
-  </div>
+  <ContentRenderer v-if="home" :value="home"/>
   <div v-else>test</div>
 </template>
 <script lang="ts" setup>

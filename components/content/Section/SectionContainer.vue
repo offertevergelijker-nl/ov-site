@@ -1,5 +1,5 @@
 <template>
-  <div :class="`container bg-green-300 flex flex-nowrap ${getWidth(width)} gap-x-12`">
+  <div :class="`container mx-auto bg-green-300 flex flex-nowrap ${getWidth(width)} gap-x-12`">
     <slot/>
   </div>
 </template>

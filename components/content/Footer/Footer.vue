@@ -1,6 +1,6 @@
 <template>
   <div class="bg-primary-900 pt-24 pb-12">
-    <div class="container bg-primary-900 flex flex-row justify-between">
+    <div class="container mx-auto bg-primary-900 flex flex-row justify-between">
       <div class="w-1/4">
         <div class="container text-white">
           <img src="public/offertevergelijker_logo_white.png" alt="test" class="h-12 mb-4"/>
@@ -48,7 +48,7 @@
   </div>
   <hr class="border-gray-500"/>
   <div class="bg-primary-900 py-12">
-    <div class="container bg-primary-900 flex flex-row justify-between">
+    <div class="container mx-auto bg-primary-900 flex flex-row justify-between">
       <div class="w-1/2">
         <div class="container text-white">
           <p>© <a href="https://offertevergelijker.nl/" class="underline">Offertevergelijker</a> 2019 - 2023</p>
