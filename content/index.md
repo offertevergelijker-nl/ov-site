@@ -1,4 +1,5 @@
 ::hero-home{container-width="full" img-url="assets/home/hero_image.jpeg"}
+
 #heroTitle
 Kies je klus, vergelijk en bespaar!
 
@@ -11,11 +12,10 @@ Kies je klus, vergelijk en bespaar!
 #heroReviewCount
 50.000
 
-::ui-button{type="primary"}
-Lorem ipsum
 ::
 
 ::core-values
+
 #valueOne
 Vergelijk gratis offertes
 
@@ -27,6 +27,7 @@ Onafhankelijk advies
 
 #valueFour
 100% vrijblijvend
+
 ::
 
 ::how-it-works{container-width="three-quarters"}
@@ -39,6 +40,7 @@ Hoe werkt het
 #title
 Gratis offertes aanvragen, geheel vrijblijvend!
 ::
+
 
 [//]: # ()
 [//]: # (::popular-products)
