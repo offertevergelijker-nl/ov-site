@@ -10,6 +10,9 @@ Kies je klus, vergelijk en bespaar!
 
 #heroReviewCount
 50.000
+
+::ui-button{type="primary"}
+Lorem ipsum
 ::
 
 ::core-values
