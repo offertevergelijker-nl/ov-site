@@ -41,8 +41,8 @@ Hoe werkt het
 Gratis offertes aanvragen, geheel vrijblijvend!
 ::
 
-
 [//]: # ()
+
 [//]: # (::popular-products)
 
 [//]: # (#title)
@@ -50,6 +50,7 @@ Gratis offertes aanvragen, geheel vrijblijvend!
 [//]: # (Populaire producten)
 
 [//]: # ()
+
 [//]: # (#content)
 
 [//]: # (:::popular-products-column)
@@ -59,6 +60,7 @@ Gratis offertes aanvragen, geheel vrijblijvend!
 [//]: # (Lorem ipsum)
 
 [//]: # ()
+
 [//]: # (#button)
 
 [//]: # (Meer weten)
@@ -66,6 +68,7 @@ Gratis offertes aanvragen, geheel vrijblijvend!
 [//]: # (:::)
 
 [//]: # ()
+
 [//]: # (:::popular-products-column)
 
 [//]: # (#product)
@@ -73,6 +76,7 @@ Gratis offertes aanvragen, geheel vrijblijvend!
 [//]: # (Lorem ipsum)
 
 [//]: # ()
+
 [//]: # (#button)
 
 [//]: # (Meer weten)
@@ -80,6 +84,7 @@ Gratis offertes aanvragen, geheel vrijblijvend!
 [//]: # (:::)
 
 [//]: # ()
+
 [//]: # (:::popular-products-column)
 
 [//]: # (#product)
@@ -87,6 +92,7 @@ Gratis offertes aanvragen, geheel vrijblijvend!
 [//]: # (Lorem ipsum)
 
 [//]: # ()
+
 [//]: # (#button)
 
 [//]: # (Meer weten)
@@ -94,6 +100,7 @@ Gratis offertes aanvragen, geheel vrijblijvend!
 [//]: # (:::)
 
 [//]: # ()
+
 [//]: # (:::popular-products-column)
 
 [//]: # (#product)
@@ -101,6 +108,7 @@ Gratis offertes aanvragen, geheel vrijblijvend!
 [//]: # (Lorem ipsum)
 
 [//]: # ()
+
 [//]: # (#button)
 
 [//]: # (Meer weten)
@@ -108,6 +116,7 @@ Gratis offertes aanvragen, geheel vrijblijvend!
 [//]: # (:::)
 
 [//]: # ()
+
 [//]: # (:::popular-products-column)
 
 [//]: # (#product)
@@ -115,6 +124,7 @@ Gratis offertes aanvragen, geheel vrijblijvend!
 [//]: # (Lorem ipsum)
 
 [//]: # ()
+
 [//]: # (#button)
 
 [//]: # (Meer weten)
@@ -124,6 +134,7 @@ Gratis offertes aanvragen, geheel vrijblijvend!
 [//]: # (::)
 
 [//]: # ()
+
 [//]: # (::who-are-we)
 
 [//]: # (---)
@@ -141,11 +152,13 @@ Gratis offertes aanvragen, geheel vrijblijvend!
 [//]: # (Wie is Offertevergelijker?)
 
 [//]: # ()
+
 [//]: # (#introduction)
 
 [//]: # (Vergelijken doen we allemaal en altijd. Of het nou gaat om het kiezen van de juiste avocado, de leukste vakantie of het beste bedrijf voor jouw klus.)
 
 [//]: # ()
+
 [//]: # (#content)
 
 [//]: # (Via Offertevergelijker vraag je vrijblijvend offertes aan van bedrijven die bij jou in de regio actief zijn. Door de offertes met elkaar te vergelijken, ontdek je eenvoudig de verschillen op het gebied van prijs, ervaring en garantie. Zo vind je gemakkelijk het bedrijf dat bij jou past en bespaar je vaak ook nog eens veel geld!)
@@ -153,6 +166,7 @@ Gratis offertes aanvragen, geheel vrijblijvend!
 [//]: # (::)
 
 [//]: # ()
+
 [//]: # (::customer-reviews)
 
 [//]: # (#headline)
@@ -160,6 +174,7 @@ Gratis offertes aanvragen, geheel vrijblijvend!
 [//]: # (Vertrouwd door 500+ klanten)
 
 [//]: # ()
+
 [//]: # (#title)
 
 [//]: # (Wat klanten van Offertevergelijker vinden)
@@ -167,6 +182,7 @@ Gratis offertes aanvragen, geheel vrijblijvend!
 [//]: # (::)
 
 [//]: # ()
+
 [//]: # (::blog-posts)
 
 [//]: # (#headline)
@@ -174,6 +190,7 @@ Gratis offertes aanvragen, geheel vrijblijvend!
 [//]: # (Tips & artikelen)
 
 [//]: # ()
+
 [//]: # (#title)
 
 [//]: # (Interessante artikelen vol handige informatie)
@@ -181,6 +198,7 @@ Gratis offertes aanvragen, geheel vrijblijvend!
 [//]: # (::)
 
 [//]: # ()
+
 [//]: # (::register-as-specialist)
 
 [//]: # (---)
@@ -196,6 +214,7 @@ Gratis offertes aanvragen, geheel vrijblijvend!
 [//]: # (Ben je zelf een vakspecialist?)
 
 [//]: # ()
+
 [//]: # (#content)
 
 [//]: # (Je kunt je bij ons aanmelden als vakspecialist! Er zijn tienduizenden gebruikers die dagelijks meerdere offertes vergelijken. Meld je aan en ontvang opdrachten aan de lopende band!)
