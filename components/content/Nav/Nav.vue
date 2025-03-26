@@ -15,7 +15,7 @@
       </nav>
       <div class="bg-white">
         <div class="flex gap-x-4">
-          <UiButton>Inschrijven als vakman</UiButton>
+          <Button>Inschrijven als vakman</Button>
         </div>
       </div>
     </div>

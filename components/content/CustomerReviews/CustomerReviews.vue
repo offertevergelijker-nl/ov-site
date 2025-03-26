@@ -3,8 +3,8 @@
     <SectionContainer class="bg-white mb-24">
       <div class="w-full">
         <div class="container flex flex-col items-center">
-          <UiHeadline><ContentSlot name="headline" unwrap="p"/></UiHeadline>
-          <h3 class="text-4xl font-semibold"><ContentSlot name="title" unwrap="p"/></h3>
+          <Headline><slot name="headline" mdc-unwrap="p"/></Headline>
+          <h3 class="text-4xl font-semibold"><slot name="title" mdc-unwrap="p"/></h3>
         </div>
       </div>
     </SectionContainer>
@@ -17,7 +17,7 @@
     <SectionContainer class="bg-white">
       <div class="w-full">
         <div class="container flex flex-col items-center">
-          <UiButton href="#" type="secondary">Lees alle reviews</UiButton>
+          <Button href="#" type="secondary">Lees alle reviews</Button>
         </div>
       </div>
     </SectionContainer>

@@ -1,13 +1,13 @@
 <template>
   <div :class="`bg-white border border-solid border-gray-200 rounded-xl shadow-xl ${getWidth(columnWidth)} ${padding}`">
-    <ColumnContainer class="bg-white">
+    <ColumnContainer class="bg-white px-4">
       <div class="flex flex-row justify-between">
         <div>
-          <Icon name="mdi:star" class="bg-yellow-500" size="18" />
-          <Icon name="mdi:star" class="bg-yellow-500" size="18" />
-          <Icon name="mdi:star" class="bg-yellow-500" size="18" />
-          <Icon name="mdi:star" class="bg-yellow-500" size="18" />
-          <Icon name="mdi:star" class="bg-yellow-500" size="18" />
+          <Icon name="mdi:star" class="text-yellow-500" size="1rem" />
+          <Icon name="mdi:star" class="text-yellow-500" size="1rem" />
+          <Icon name="mdi:star" class="text-yellow-500" size="1rem" />
+          <Icon name="mdi:star" class="text-yellow-500" size="1rem" />
+          <Icon name="mdi:star" class="text-yellow-500" size="1rem" />
         </div>
         <p class="bg-gray-100 flex flex-col justify-center items-center font-semibold rounded w-8 h-8 mb-4">10</p>
       </div>

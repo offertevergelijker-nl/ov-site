@@ -1,9 +1,9 @@
 <template>
   <div class="bg-red-300 container">
-    <ContentSlot name="icon" />
-    <ContentSlot name="content" />
-    <ContentSlot name="action" />
-    <ContentSlot name="media" />
+    <slot name="icon" mdc-unwrap="p"/>
+    <slot name="content" mdc-unwrap="p"/>
+    <slot name="action" mdc-unwrap="p"/>
+    <slot name="media" mdc-unwrap="p"/>
     <slot />
   </div>
 </template>

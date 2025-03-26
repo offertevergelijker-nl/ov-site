@@ -1,15 +1,15 @@
 <template>
-  <SectionWrapper class="bg-primary-50">
-    <SectionContainer class="bg-primary-50 mb-12">
+  <SectionWrapper class="bg-white">
+    <SectionContainer class="bg-white mb-12">
       <div class="w-full">
         <div class="container flex flex-col items-center">
-          <UiHeadline v-if="$slots.headline"><ContentSlot name="headline" /></UiHeadline>
-          <h3 class="text-4xl font-semibold"><ContentSlot name="title" /></h3>
+          <Headline v-if="$slots.headline"><slot name="headline" mdc-unwrap="p" /></Headline>
+          <h3 class="text-4xl font-semibold"><slot name="title" mdc-unwrap="p" /></h3>
         </div>
       </div>
     </SectionContainer>
     <SectionContainer :width="containerWidth" class="bg-primary-50 gap-x-0">
-      <ContentSlot name="content" unwrap="p" />
+      <slot name="content" mdc-unwrap="p" />
     </SectionContainer>
   </SectionWrapper>
 </template>
