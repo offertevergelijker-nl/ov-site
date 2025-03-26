@@ -31,8 +31,38 @@ Onafhankelijk advies
 ::
 
 ::how-it-works{container-width="three-quarters"}
+
 #content
-Lorem ipsum dolor emit
+
+::how-it-works-column{icon-name="mdi:search"}
+
+#content
+Zoek naar het product of de dienst van jouw voorkeur en ga door met aanvragen.
+
+#button
+Zoek mijn product
+
+::
+
+::how-it-works-column{icon-name="mdi:file-outline"}
+
+#content
+Ontvang vrijblijvend en gratis offertes. Vergelijk deze en vind de beste deal voor jou!
+
+#button
+Vergelijk offertes
+
+::
+
+::how-it-works-column{icon-name="mdi:trophy-outline"}
+
+#content
+Ga naar het aanvraag formulier van jouw gewenste product of dienst en vul deze in.
+
+#button
+Vraag offertes aan
+
+::
 
 #headline
 Hoe werkt het
@@ -41,182 +71,109 @@ Hoe werkt het
 Gratis offertes aanvragen, geheel vrijblijvend!
 ::
 
-[//]: # ()
+::popular-products
 
-[//]: # (::popular-products)
+#title
+Populaire producten
 
-[//]: # (#title)
+#content
 
-[//]: # (Populaire producten)
+::popular-products-column
 
-[//]: # ()
+#product
+Lorem ipsum
 
-[//]: # (#content)
+#button
+Meer weten
 
-[//]: # (:::popular-products-column)
+::
 
-[//]: # (#product)
 
-[//]: # (Lorem ipsum)
+::popular-products-column
 
-[//]: # ()
+#product
+Lorem ipsum
 
-[//]: # (#button)
+#button
+Meer weten
 
-[//]: # (Meer weten)
+::
 
-[//]: # (:::)
 
-[//]: # ()
+::popular-products-column
 
-[//]: # (:::popular-products-column)
+#product
+Lorem ipsum
 
-[//]: # (#product)
+#button
+Meer weten
 
-[//]: # (Lorem ipsum)
+::
 
-[//]: # ()
 
-[//]: # (#button)
+::popular-products-column
 
-[//]: # (Meer weten)
+#product
+Lorem ipsum
 
-[//]: # (:::)
+#button
+Meer weten
 
-[//]: # ()
+::
 
-[//]: # (:::popular-products-column)
 
-[//]: # (#product)
+::popular-products-column
 
-[//]: # (Lorem ipsum)
+#product
+Lorem ipsum
 
-[//]: # ()
+#button
+Meer weten
 
-[//]: # (#button)
+::
 
-[//]: # (Meer weten)
+::
 
-[//]: # (:::)
+::who-are-we{container-width="two-thirds" img-alt="test test test" img-src="assets/home/photo_1.jpeg"}
 
-[//]: # ()
+#title
+Wie is Offertevergelijker?
 
-[//]: # (:::popular-products-column)
+#introduction
+Vergelijken doen we allemaal en altijd. Of het nou gaat om het kiezen van de juiste avocado, de leukste vakantie of het beste bedrijf voor jouw klus.
 
-[//]: # (#product)
+#content
+Via Offertevergelijker vraag je vrijblijvend offertes aan van bedrijven die bij jou in de regio actief zijn. Door de offertes met elkaar te vergelijken, ontdek je eenvoudig de verschillen op het gebied van prijs, ervaring en garantie. Zo vind je gemakkelijk het bedrijf dat bij jou past en bespaar je vaak ook nog eens veel geld!
 
-[//]: # (Lorem ipsum)
+::
 
-[//]: # ()
+::customer-reviews
 
-[//]: # (#button)
+#headline
+Vertrouwd door 500+ klanten
 
-[//]: # (Meer weten)
 
-[//]: # (:::)
+#title
+Wat klanten van Offertevergelijker vinden
 
-[//]: # ()
+::
 
-[//]: # (:::popular-products-column)
+::blog-posts
 
-[//]: # (#product)
+#headline
+Tips & artikelen
 
-[//]: # (Lorem ipsum)
+#title
+Interessante artikelen vol handige informatie
 
-[//]: # ()
+::
 
-[//]: # (#button)
+::register-as-specialist{container-width="third" img-url="assets/specialist_bg.jpg"}
 
-[//]: # (Meer weten)
+#title
+Ben je zelf een vakspecialist?
 
-[//]: # (:::)
+#content
+Je kunt je bij ons aanmelden als vakspecialist! Er zijn tienduizenden gebruikers die dagelijks meerdere offertes vergelijken. Meld je aan en ontvang opdrachten aan de lopende band!
 
-[//]: # (::)
-
-[//]: # ()
-
-[//]: # (::who-are-we)
-
-[//]: # (---)
-
-[//]: # (container-width: two-thirds)
-
-[//]: # (img-alt: test test test)
-
-[//]: # (img-src: assets/home/photo_1.jpeg)
-
-[//]: # (---)
-
-[//]: # (#title)
-
-[//]: # (Wie is Offertevergelijker?)
-
-[//]: # ()
-
-[//]: # (#introduction)
-
-[//]: # (Vergelijken doen we allemaal en altijd. Of het nou gaat om het kiezen van de juiste avocado, de leukste vakantie of het beste bedrijf voor jouw klus.)
-
-[//]: # ()
-
-[//]: # (#content)
-
-[//]: # (Via Offertevergelijker vraag je vrijblijvend offertes aan van bedrijven die bij jou in de regio actief zijn. Door de offertes met elkaar te vergelijken, ontdek je eenvoudig de verschillen op het gebied van prijs, ervaring en garantie. Zo vind je gemakkelijk het bedrijf dat bij jou past en bespaar je vaak ook nog eens veel geld!)
-
-[//]: # (::)
-
-[//]: # ()
-
-[//]: # (::customer-reviews)
-
-[//]: # (#headline)
-
-[//]: # (Vertrouwd door 500+ klanten)
-
-[//]: # ()
-
-[//]: # (#title)
-
-[//]: # (Wat klanten van Offertevergelijker vinden)
-
-[//]: # (::)
-
-[//]: # ()
-
-[//]: # (::blog-posts)
-
-[//]: # (#headline)
-
-[//]: # (Tips & artikelen)
-
-[//]: # ()
-
-[//]: # (#title)
-
-[//]: # (Interessante artikelen vol handige informatie)
-
-[//]: # (::)
-
-[//]: # ()
-
-[//]: # (::register-as-specialist)
-
-[//]: # (---)
-
-[//]: # (container-width: third)
-
-[//]: # (img-url: assets/specialist_bg.jpg)
-
-[//]: # (---)
-
-[//]: # (#title)
-
-[//]: # (Ben je zelf een vakspecialist?)
-
-[//]: # ()
-
-[//]: # (#content)
-
-[//]: # (Je kunt je bij ons aanmelden als vakspecialist! Er zijn tienduizenden gebruikers die dagelijks meerdere offertes vergelijken. Meld je aan en ontvang opdrachten aan de lopende band!)
-
-[//]: # (::)
+::

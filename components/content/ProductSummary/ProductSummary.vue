@@ -7,7 +7,7 @@
           <p class="mb-6">Op steeds meer daken zie je ze liggen: zonnepanelen. Overweeg jij ook om zonnepanelen te laten plaatsen?
             Lees dan hier alles over het rendement en de gemiddelde kosten. Benieuwd naar de exacte kosten in jouw
             situatie? Vraag dan eenvoudig zonnepaneel offertes aan en ontvang tot drie vrijblijvende offertes!</p>
-          <UiButton>Ontvang gratis offertes</UiButton>
+          <Button>Ontvang gratis offertes</Button>
         </div>
         <div class="container">
           <h3 class="text-3xl font-semibold mb-4">Waarom zonnepanelen?</h3>
@@ -58,7 +58,7 @@
             zonnepanelen vergelijken in jouw situatie? Vraag dan nu gratis en vrijblijvend tot 3 offertes aan van
             ervaren zonnepaneelspecialisten uit de regio. Zo bespaar je in 2 minuten eenvoudig tot wel 30% van de
             kosten!</p>
-          <UiButton>Ontvang gratis offertes</UiButton>
+          <Button>Ontvang gratis offertes</Button>
         </div>
       </div>
       <div class="w-1/3 bg-white">

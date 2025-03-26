@@ -1,25 +1,25 @@
 <template>
-  <SectionWrapper class="bg-primary-50">
-    <SectionContainer class="bg-primary-50 mb-12">
+  <SectionWrapper class="bg-white">
+    <SectionContainer class="bg-white mb-12">
       <div class="w-full">
         <div class="container">
           <h3 class="text-4xl font-semibold">
-            <ContentSlot name="title" />
+            <slot name="title" mdc-unwrap="p"/>
           </h3>
         </div>
       </div>
     </SectionContainer>
-    <SectionContainer :width="containerWidth" class="bg-primary-50 gap-x-4 mb-24">
+    <SectionContainer :width="containerWidth" class="bg-white gap-x-4 mb-24">
       <div class="w-full">
         <div class="container flex flex-row gap-x-8">
-          <ContentSlot name="content"/>
+          <slot name="content" mdc-unwrap="p"/>
         </div>
       </div>
     </SectionContainer>
-    <SectionContainer class="bg-primary-50">
+    <SectionContainer class="bg-white">
       <div class="w-full">
         <div class="container flex flex-col items-center">
-          <UiButton href="#" type="link">Bekijk alle producten</UiButton>
+          <Button href="#" type="link">Bekijk alle producten</Button>
         </div>
       </div>
     </SectionContainer>

@@ -12,7 +12,7 @@
         </select>
         <form class="flex">
           <input type="text" placeholder="Jouw postcode..." class="px-3">
-          <UiButton type="primary">Vergelijk offertes</UiButton>
+          <Button type="primary">Vergelijk offertes</Button>
         </form>
       </div>
       <p>Wij scoren een <slot name="heroReviewScore" mdc-unwrap="p" /> uit ruim <slot name="heroReviewCount" mdc-unwrap="p" /> klantbeoordelingen!</p>

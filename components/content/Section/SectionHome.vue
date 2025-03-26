@@ -9,9 +9,9 @@
           <p class="mb-6">
             <ContentSlot name="ColumnContent" unwrap="p"/>
           </p>
-          <UiButton :href="href">
+          <Button :href="href">
             <ContentSlot name="ColumnActions" unwrap="p"/>
-          </UiButton>
+          </Button>
         </div>
       </ColumnWrapper>
       <ColumnWrapper width="half" padding="p-0">
