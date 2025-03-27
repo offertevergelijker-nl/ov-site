@@ -1,4 +1,4 @@
-::inquiry-request-form{product-id=105 heading='test test'}
+::inquiry-request-form{product-id=105}
 
 #ratings
 Test
