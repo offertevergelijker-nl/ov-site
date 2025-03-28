@@ -1,49 +1,58 @@
 <template>
-  <SectionWrapper class="bg-white">
-    <SectionContainer :width="containerWidth" class="relative bg-white items-center py-8" :class="beforeClasses">
-      <div class="bg-white flex items-center gap-x-12 rounded-2xl p-12 z-10">
-        <div class="w-1/2 z-10">
-          <div class="container">
-            <h3 class="text-4xl font-semibold mb-4">
-              <slot name="title" mdc-unwrap="p"/>
-            </h3>
-            <p class="mb-2 italic">
-              <slot name="introduction" mdc-unwrap="p"/>
-            </p>
-            <p class="mb-8 text-lg">
-              <slot name="content" mdc-unwrap="p"/>
-            </p>
-            <Button>Vergelijk offertes</Button>
+  <div :class="classes.section">
+    <div :class="[classes.container.base, getWidth(props.containerWidth)]">
+      <NuxtImg src="assets/pattern.jpeg" :class="[classes.image]" />
+      <div :class="classes.container.inner">
+        <div :class="[classes.column.container, 'w-1/2']">
+          <div :class="classes.column.content">
+            <h3 :class="classes.title">Wie is Offertevergelijker?</h3>
+            <p :class="classes.intro">Vergelijken doen we allemaal en altijd. Of het nou gaat om
+              het kiezen van de juiste avocado, de leukste vakantie of het
+              beste bedrijf voor jouw klus.</p>
+            <p :class="classes.text">Via Offertevergelijker vraag je vrijblijvend offertes aan
+              van bedrijven die bij jou in de regio actief zijn. Door de
+              offertes met elkaar te vergelijken, ontdek je eenvoudig de
+              verschillen op het gebied van prijs, ervaring en garantie.
+              Zo vind je gemakkelijk het bedrijf dat bij jou past en bespaar
+              je vaak ook nog eens veel geld!</p>
+            <Button label="Vergelijk offertes" type="quaternary"/>
           </div>
         </div>
-        <div class="w-1/2 z-10">
-          <div class="container">
-            <img :src="imgSrc" :alt="imgAlt" class="aspect-square object-cover rounded-xl"/>
+        <div :class="[classes.column.container, 'w-1/2']">
+          <div :class="classes.column.content">
+            <NuxtImg :src="props.image" class="aspect-square object-cover rounded-xl"/>
           </div>
         </div>
       </div>
-    </SectionContainer>
-  </SectionWrapper>
+    </div>
+  </div>
 </template>
 
 <script setup lang="ts">
-defineProps({
+const props = defineProps({
   containerWidth: {
     type: String,
     default: 'full'
   },
-  imgSrc: {
+  image: {
     type: String,
     default: '/'
-  },
-  imgAlt: {
-    type: String,
-    default: ''
-  },
+  }
 });
 
-const beforeClasses = `
-before:bg-[url('public/assets/pattern.jpeg')]
-before:absolute before:w-full before:h-full before:-right-7.5
-before:bg-cover before:rounded-3xl before:opacity-75 before:z-0`
+const classes = {
+  section: 'relative p-24',
+  container: {
+    base: 'relative container mx-auto p-8',
+    inner: 'relative flex items-center gap-x-12 bg-white rounded-2xl p-12'
+  },
+  image: 'absolute container mx-auto inset-0 right-0 object-cover rounded-3xl w-full h-full z-0',
+  column: {
+    container: 'relative bg-white',
+    content: 'relative'
+  },
+  title: 'text-4xl font-semibold mb-6',
+  intro: 'italic mb-2',
+  text: 'text-lg mb-8'
+}
 </script>

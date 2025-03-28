@@ -1,34 +1,41 @@
 <template>
-  <div :class="`bg-white rounded-xl shadow-xl ${getWidth(columnWidth)} ${padding} -mt-24 ${motionClasses}`" >
-    <ColumnContainer class="bg-white">
-      <Icon :name="iconName" class="mb-4" size="2rem"><slot name="icon" mdc-unwrap="p"/></Icon>
-      <p v-if="$slots.content" class="mb-6 text-lg"><slot name="content" mdc-unwrap="p"/></p>
-      <Button v-if="$slots.button" :href="link" type="link" icon><slot name="button" mdc-unwrap="p"/></Button>
-    </ColumnContainer>
+  <div :class="classes.container">
+    <div :class="classes.content">
+      <Badge :icon="props.icon" type="quaternary" size="lg" class="mb-4"/>
+      <p :class="classes.text">
+        <slot mdc-unwrap="p"/>
+      </p>
+      <Button
+          v-if="props.button"
+          :label="props.button"
+          iconRight="material-symbols:chevron-right-rounded"
+          type="secondary"
+          isLink
+      />
+    </div>
+    <div :class="[classes.line.base, classes.line.hover]"/>
   </div>
 </template>
 
 <script setup lang="ts">
-defineProps({
-  columnWidth: {
+const props = defineProps({
+  button: {
     type: String,
-    default: 'third',
+    default: '',
   },
-  iconName: {
+  icon: {
     type: String,
     default: ''
   },
-  padding: {
-    type: String,
-    default: 'p-8'
-  },
-  link: {
-    type: String,
-    default: '#',
-  }
 });
 
-const motionClasses = `
-motion-scale-in-[0.5] motion-translate-x-in-[-25%] motion-translate-y-in-[25%] motion-opacity-in-[0%] motion-rotate-in-[-10deg] motion-blur-in-[5px] motion-duration-[0.35s] motion-duration-[0.53s]/scale motion-duration-[0.53s]/translate motion-duration-[0.63s]/rotate motion-ease-spring-bouncier
-`
+const classes = {
+  container: 'group relative bg-white shadow-xl hover:shadow-2xl rounded-xl p-8 overflow-hidden border-t border-l border-gray-100 transition-all duration-200',
+  content: 'relative text-left z-10',
+  text: 'text-lg mb-6',
+  line: {
+    base: 'absolute bottom-0 left-0 w-0 h-1 bg-secondary-500 opacity-30 transition-all duration-200',
+    hover: 'group-hover:w-full group-hover:opacity-100',
+  }
+}
 </script>

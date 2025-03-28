@@ -15,7 +15,7 @@
       </nav>
       <div class="bg-white">
         <div class="flex gap-x-4">
-          <Button>Inschrijven als vakman</Button>
+          <Button label="Inschrijven als vakman" type="quaternary"/>
         </div>
       </div>
     </div>
