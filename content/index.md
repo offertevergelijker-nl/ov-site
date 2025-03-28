@@ -1,5 +1,12 @@
-::hero-home{container-width="full" img-url="assets/home/hero_image.jpeg"}
+---
+title: Offertes vergelijken
+---
 
+::hero-home
+---
+container-width: full
+img-url: assets/home/hero_image.jpeg
+---
 #heroTitle
 Kies je klus, vergelijk en bespaar!
 
@@ -11,11 +18,9 @@ Kies je klus, vergelijk en bespaar!
 
 #heroReviewCount
 50.000
-
 ::
 
 ::core-values
-
 #valueOne
 Vergelijk gratis offertes
 
@@ -27,42 +32,45 @@ Onafhankelijk advies
 
 #valueFour
 100% vrijblijvend
-
 ::
 
-::how-it-works{container-width="three-quarters"}
-
+::how-it-works
+---
+container-width: three-quarters
+---
 #content
+  :::how-it-works-column
+  ---
+  icon-name: mdi:search
+  ---
+  #content
+  Zoek naar het product of de dienst van jouw voorkeur en ga door met aanvragen.
+  
+  #button
+  Zoek mijn product
+  :::
 
-::how-it-works-column{icon-name="mdi:search"}
+  :::how-it-works-column
+  ---
+  icon-name: mdi:file-outline
+  ---
+  #content
+  Ontvang vrijblijvend en gratis offertes. Vergelijk deze en vind de beste deal voor jou!
+  
+  #button
+  Vergelijk offertes
+  :::
 
-#content
-Zoek naar het product of de dienst van jouw voorkeur en ga door met aanvragen.
-
-#button
-Zoek mijn product
-
-::
-
-::how-it-works-column{icon-name="mdi:file-outline"}
-
-#content
-Ontvang vrijblijvend en gratis offertes. Vergelijk deze en vind de beste deal voor jou!
-
-#button
-Vergelijk offertes
-
-::
-
-::how-it-works-column{icon-name="mdi:trophy-outline"}
-
-#content
-Ga naar het aanvraag formulier van jouw gewenste product of dienst en vul deze in.
-
-#button
-Vraag offertes aan
-
-::
+  :::how-it-works-column
+  ---
+  icon-name: mdi:trophy-outline
+  ---
+  #content
+  Ga naar het aanvraag formulier van jouw gewenste product of dienst en vul deze in.
+  
+  #button
+  Vraag offertes aan
+  :::
 
 #headline
 Hoe werkt het
@@ -72,70 +80,57 @@ Gratis offertes aanvragen, geheel vrijblijvend!
 ::
 
 ::popular-products
-
 #title
 Populaire producten
 
 #content
+  :::popular-products-column
+  #product
+  Lorem ipsum
+  
+  #button
+  Meer weten
+  :::
 
-::popular-products-column
+  :::popular-products-column
+  #product
+  Lorem ipsum
+  
+  #button
+  Meer weten
+  :::
 
-#product
-Lorem ipsum
+  :::popular-products-column
+  #product
+  Lorem ipsum
+  
+  #button
+  Meer weten
+  :::
 
-#button
-Meer weten
+  :::popular-products-column
+  #product
+  Lorem ipsum
+  
+  #button
+  Meer weten
+  :::
 
+  :::popular-products-column
+  #product
+  Lorem ipsum
+  
+  #button
+  Meer weten
+  :::
 ::
 
-
-::popular-products-column
-
-#product
-Lorem ipsum
-
-#button
-Meer weten
-
-::
-
-
-::popular-products-column
-
-#product
-Lorem ipsum
-
-#button
-Meer weten
-
-::
-
-
-::popular-products-column
-
-#product
-Lorem ipsum
-
-#button
-Meer weten
-
-::
-
-
-::popular-products-column
-
-#product
-Lorem ipsum
-
-#button
-Meer weten
-
-::
-
-::
-
-::who-are-we{container-width="two-thirds" img-alt="test test test" img-src="assets/home/photo_1.jpeg"}
-
+::who-are-we
+---
+container-width: two-thirds
+img-alt: test test test
+img-src: assets/home/photo_1.jpeg
+---
 #title
 Wie is Offertevergelijker?
 
@@ -144,36 +139,32 @@ Vergelijken doen we allemaal en altijd. Of het nou gaat om het kiezen van de jui
 
 #content
 Via Offertevergelijker vraag je vrijblijvend offertes aan van bedrijven die bij jou in de regio actief zijn. Door de offertes met elkaar te vergelijken, ontdek je eenvoudig de verschillen op het gebied van prijs, ervaring en garantie. Zo vind je gemakkelijk het bedrijf dat bij jou past en bespaar je vaak ook nog eens veel geld!
-
 ::
 
 ::customer-reviews
-
 #headline
 Vertrouwd door 500+ klanten
 
-
 #title
 Wat klanten van Offertevergelijker vinden
-
 ::
 
 ::blog-posts
-
 #headline
 Tips & artikelen
 
 #title
 Interessante artikelen vol handige informatie
-
 ::
 
-::register-as-specialist{container-width="third" img-url="assets/specialist_bg.jpg"}
-
+::register-as-specialist
+---
+container-width: third
+img-url: assets/specialist_bg.jpg
+---
 #title
 Ben je zelf een vakspecialist?
 
 #content
 Je kunt je bij ons aanmelden als vakspecialist! Er zijn tienduizenden gebruikers die dagelijks meerdere offertes vergelijken. Meld je aan en ontvang opdrachten aan de lopende band!
-
 ::
