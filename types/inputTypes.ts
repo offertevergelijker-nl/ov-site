@@ -2,6 +2,8 @@ export interface InquiryCreateInput {
     productId: string;
     customer: InquiryCreateCustomerInput;
     location: InquiryCreateLocationInput;
+    meta: InquiryCreateMetaInput;
+    answers: [InquiryCreateAnswerInput];
 }
 
 export interface InquiryCreateCustomerInput {
@@ -35,5 +37,5 @@ export interface InquiryCreateAnswerInput {
 
 export interface InquiryCreateOptionInput {
     optionId: string | number;
-    
+
 }
