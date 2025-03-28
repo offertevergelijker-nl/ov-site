@@ -1,143 +1,50 @@
-::hero-home{container-width="full" img-url="assets/home/hero_image.jpeg"}
-
-#heroTitle
-Kies je klus, vergelijk en bespaar!
-
-#heroCustomerCount
-98.000
-
-#heroReviewScore
-4.8
-
-#heroReviewCount
-50.000
-
+::hero-home{image="assets/home/hero_image.jpeg" title="Kies je klus, vergelijk en bespaar!"}
 ::
 
-::core-values
-
-#valueOne
-Vergelijk gratis offertes
-
-#valueTwo
-Betrouwbare vakmannen
-
-#valueThree
-Onafhankelijk advies
-
-#valueFour
-100% vrijblijvend
-
+::core-values{valueOne="Vergelijk gratis offertes" valueTwo="Betrouwbare vakmannen" valueThree="Onafhankelijk advies" valueFour="100% vrijblijvend"}
 ::
 
-::how-it-works{container-width="three-quarters"}
+::how-it-works{headline="Hoe werkt het" title="Gratis offertes aanvragen, geheel vrijblijvend!"}
 
-#content
-
-::how-it-works-column{icon-name="mdi:search"}
-
-#content
+::how-it-works-column{icon="material-symbols:search-rounded" button="Zoek mijn product"}
 Zoek naar het product of de dienst van jouw voorkeur en ga door met aanvragen.
-
-#button
-Zoek mijn product
-
 ::
 
-::how-it-works-column{icon-name="mdi:file-outline"}
-
-#content
+::how-it-works-column{icon="material-symbols:file-export-outline-rounded" button="Vergelijk offertes"}
 Ontvang vrijblijvend en gratis offertes. Vergelijk deze en vind de beste deal voor jou!
-
-#button
-Vergelijk offertes
-
 ::
 
-::how-it-works-column{icon-name="mdi:trophy-outline"}
-
-#content
+::how-it-works-column{icon="mdi:trophy-outline" button="Vraag offertes aan"}
 Ga naar het aanvraag formulier van jouw gewenste product of dienst en vul deze in.
-
-#button
-Vraag offertes aan
+::
 
 ::
 
-#headline
-Hoe werkt het
-
-#title
-Gratis offertes aanvragen, geheel vrijblijvend!
-::
-
-::popular-products
-
-#title
-Populaire producten
-
-#content
+::popular-products{title="Populaire producten"}
 
 ::popular-products-column
-
-#product
 Lorem ipsum
-
-#button
-Meer weten
-
 ::
-
 
 ::popular-products-column
-
-#product
 Lorem ipsum
-
-#button
-Meer weten
-
 ::
-
 
 ::popular-products-column
-
-#product
 Lorem ipsum
-
-#button
-Meer weten
-
 ::
-
 
 ::popular-products-column
-
-#product
 Lorem ipsum
-
-#button
-Meer weten
-
 ::
-
 
 ::popular-products-column
-
-#product
 Lorem ipsum
-
-#button
-Meer weten
-
 ::
 
 ::
 
-::who-are-we{container-width="two-thirds" img-alt="test test test" img-src="assets/home/photo_1.jpeg"}
-
-#title
-Wie is Offertevergelijker?
+::who-are-we{container-width="three-quarters" img-alt="test test test" image="assets/home/photo_1.jpeg"}
 
 #introduction
 Vergelijken doen we allemaal en altijd. Of het nou gaat om het kiezen van de juiste avocado, de leukste vakantie of het beste bedrijf voor jouw klus.
@@ -147,33 +54,14 @@ Via Offertevergelijker vraag je vrijblijvend offertes aan van bedrijven die bij 
 
 ::
 
-::customer-reviews
-
-#headline
-Vertrouwd door 500+ klanten
-
-
-#title
-Wat klanten van Offertevergelijker vinden
+::customer-reviews{headline="Vertrouwd door 500+ klanten" title="Wat klanten van Offertevergelijker vinden"}
 
 ::
 
-::blog-posts
-
-#headline
-Tips & artikelen
-
-#title
-Interessante artikelen vol handige informatie
+::blog-posts{headline="Tips & artikelen" title="Interessante artikelen vol handige informatie"}
 
 ::
 
-::register-as-specialist{container-width="third" img-url="assets/specialist_bg.jpg"}
-
-#title
-Ben je zelf een vakspecialist?
-
-#content
+::register-as-specialist{container-width="half" image="assets/specialist_bg.jpg" title="Ben je zelf een vakspecialist?"}
 Je kunt je bij ons aanmelden als vakspecialist! Er zijn tienduizenden gebruikers die dagelijks meerdere offertes vergelijken. Meld je aan en ontvang opdrachten aan de lopende band!
-
 ::

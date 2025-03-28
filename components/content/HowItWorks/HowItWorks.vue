@@ -1,26 +1,52 @@
 <template>
-  <SectionWrapper class="bg-white pb-36">
-    <SectionContainer :width="containerWidth" class="bg-white">
-      <div class="bg-white w-full">
-        <div class="bg-white container flex flex-col items-center">
-          <Headline><slot name="headline" mdc-unwrap="p"/></Headline>
-          <h3 class="text-4xl font-semibold"><slot name="title" mdc-unwrap="p"/></h3>
+  <div :class="classes.section">
+    <div :class="[classes.container, getWidth(props.containerWidth), 'text-center mb-12']">
+      <Headline :label="props.headline"/>
+      <h3 :class="classes.title">{{ props.title }}</h3>
+    </div>
+    <div :class="[classes.container, getWidth(props.containerWidth), 'flex justify-center gap-x-10']">
+      <div :class="[classes.column.container, 'w-1/3']">
+        <div :class="[classes.column.content, 'flex flex-col gap-y-8']">
+          <slot/>
         </div>
       </div>
-    </SectionContainer>
-  </SectionWrapper>
-  <SectionWrapper class="bg-white pt-0">
-    <SectionContainer :width="containerWidth" class="bg-white">
-      <slot name="content" mdc-unwrap="p" />
-    </SectionContainer>
-  </SectionWrapper>
+      <div :class="[classes.column.container, 'w-1/3']">
+        <div :class="[classes.column.content, 'flex flex-col gap-y-8']">
+          <slot/>
+        </div>
+      </div>
+      <div :class="[classes.column.container, 'w-1/3']">
+        <div :class="[classes.column.content, 'flex flex-col gap-y-8']">
+          <slot/>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script setup lang="ts">
-defineProps({
+const props = defineProps({
   containerWidth: {
     type: String,
     default: 'full'
   },
+  headline: {
+    type: String,
+    default: ''
+  },
+  title: {
+    type: String,
+    default: ''
+  }
 });
+
+const classes = {
+  section: 'relative py-24',
+  container: 'relative container mx-auto',
+  column: {
+    container: 'relative',
+    content: ''
+  },
+  title: 'text-4xl font-semibold',
+}
 </script>

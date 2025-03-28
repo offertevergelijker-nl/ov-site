@@ -1,24 +1,24 @@
 <template>
-  <div :class="`bg-white border border-solid border-gray-200 rounded-xl shadow-xl ${getWidth(columnWidth)} ${padding}`">
-    <ColumnContainer class="bg-white px-4">
-      <div class="flex flex-row justify-between">
-        <div>
-          <Icon name="mdi:star" class="text-yellow-500" size="1rem" />
-          <Icon name="mdi:star" class="text-yellow-500" size="1rem" />
-          <Icon name="mdi:star" class="text-yellow-500" size="1rem" />
-          <Icon name="mdi:star" class="text-yellow-500" size="1rem" />
-          <Icon name="mdi:star" class="text-yellow-500" size="1rem" />
-        </div>
-        <p class="bg-gray-100 flex flex-col justify-center items-center font-semibold rounded w-8 h-8 mb-4">10</p>
+  <Card>
+    <div :class="classes.rating.base">
+      <div :class="classes.rating.stars">
+        <Icon name="mdi:star" class="text-yellow-500" size="1rem" />
+        <Icon name="mdi:star" class="text-yellow-500" size="1rem" />
+        <Icon name="mdi:star" class="text-yellow-500" size="1rem" />
+        <Icon name="mdi:star" class="text-yellow-500" size="1rem" />
+        <Icon name="mdi:star" class="text-yellow-500" size="1rem" />
       </div>
-      <h5 class="mb-2 font-semibold text-lg">Lorem ipsum</h5>
-      <p class="mb-6 text-lg">Dolore esse velit in veniam reprehenderit dolor exercitation cupidatat consectetur ut et aute ad eiusmod ipsum.</p>
-      <div class="flex flex-row justify-between items-end">
-        <p class="text-gray-300">Offertvergelijker</p>
-        <NuxtImg src="/offertevergelijker_logo.png" width="128" height="31" fit="contain"/>
-      </div>
-    </ColumnContainer>
-  </div>
+      <p :class="classes.rating.number">10</p>
+    </div>
+    <h5 :class="classes.title">Lorem ipsum</h5>
+    <p :class="classes.text">Dolore esse velit in veniam
+      reprehenderit dolor exercitation cupidatat consectetur
+      ut et aute ad eiusmod ipsum.</p>
+    <div :class="classes.company.base">
+      <p :class="classes.company.name">Offertvergelijker</p>
+      <NuxtImg src="/offertevergelijker_logo.png" width="128" height="31" fit="contain"/>
+    </div>
+  </Card>
 </template>
 
 <script setup lang="ts">
@@ -32,4 +32,19 @@ defineProps({
     default: 'py-4'
   },
 });
+
+const classes = {
+  rating: {
+    base: 'relative flex flex-row justify-between mb-4',
+    stars: 'relative',
+    number: 'relative flex justify-center items-center bg-gray-200 rounded-sm font-medium h-8 w-8',
+  },
+  title: 'text-lg font-semibold mb-2',
+  text: 'text-lg mb-6',
+  company: {
+    base: 'relative flex flex-row justify-between items-end',
+    name: 'text-gray-300',
+    logo: ''
+  }
+}
 </script>

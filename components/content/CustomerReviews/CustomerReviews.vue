@@ -1,34 +1,40 @@
 <template>
-  <SectionWrapper class="bg-white">
-    <SectionContainer class="bg-white mb-24">
-      <div class="w-full">
-        <div class="container flex flex-col items-center">
-          <Headline><slot name="headline" mdc-unwrap="p"/></Headline>
-          <h3 class="text-4xl font-semibold"><slot name="title" mdc-unwrap="p"/></h3>
-        </div>
-      </div>
-    </SectionContainer>
-    <div :class="`bg-white flex flex-nowrap w-full gap-x-4 px-4 mb-24`">
+  <div :class="classes.section">
+    <div :class="[classes.container, getWidth(props.containerWidth), 'text-center mb-12']">
+      <Headline :label="props.headline"/>
+      <h3 :class="classes.title">{{ props.title }}</h3>
+    </div>
+    <div :class="[classes.container, getWidth(props.containerWidth), 'flex gap-x-4 mb-12']">
       <Reviews/>
       <Reviews/>
       <Reviews/>
       <Reviews/>
     </div>
-    <SectionContainer class="bg-white">
-      <div class="w-full">
-        <div class="container flex flex-col items-center">
-          <Button href="#" type="secondary">Lees alle reviews</Button>
-        </div>
-      </div>
-    </SectionContainer>
-  </SectionWrapper>
+    <div :class="[classes.container, getWidth(props.containerWidth), 'text-center']">
+      <Button type="quaternary" label="Lees alle reviews"/>
+    </div>
+  </div>
 </template>
 
 <script setup lang="ts">
-defineProps({
+const props = defineProps({
   containerWidth: {
     type: String,
     default: 'full'
   },
-})
+  headline: {
+    type: String,
+    default: ''
+  },
+  title: {
+    type: String,
+    default: ''
+  }
+});
+
+const classes = {
+  section: 'relative',
+  container: 'relative container mx-auto',
+  title: 'text-4xl font-semibold',
+}
 </script>

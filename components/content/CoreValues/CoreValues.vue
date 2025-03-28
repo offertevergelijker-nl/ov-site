@@ -1,35 +1,58 @@
 <template>
-    <SectionWrapper class="!py-2 bg-primary-900">
-      <SectionContainer :width="containerWidth" class="bg-primary-900">
-        <div class="w-full">
-          <div class="container flex flex-row justify-between text-center text-white">
-            <p v-if="$slots.valueOne" class="flex flex-row gap-x-1 items-center before:bg-gray-50 before:absolute before:aspect-square before:w-4 before:ml-0.5 before:rounded-full">
-              <Icon name="mdi:checkbox-marked-circle" size="20" class="text-green-500"/>
-              <slot name="valueOne" mdc-unwrap="p"/>
-            </p>
-            <p v-if="$slots.valueTwo" class="flex flex-row gap-x-1 items-center motion-delay-100 before:bg-gray-50 before:absolute before:aspect-square before:w-4 before:ml-0.5 before:rounded-full">
-              <Icon name="mdi:checkbox-marked-circle" size="20" class="text-green-500"/>
-              <slot name="valueTwo" mdc-unwrap="p"/>
-            </p>
-            <p v-if="$slots.valueThree" class="flex flex-row gap-x-1 items-center motion-delay-200 before:bg-gray-50 before:absolute before:aspect-square before:w-4 before:ml-0.5 before:rounded-full">
-              <Icon name="mdi:checkbox-marked-circle" size="20" class="text-green-500"/>
-              <slot name="valueThree" mdc-unwrap="p"/>
-            </p>
-            <p v-if="$slots.valueFour" class="flex flex-row gap-x-1 items-center motion-delay-300 before:bg-gray-50 before:absolute before:aspect-square before:w-4 before:ml-0.5 before:rounded-full">
-              <Icon name="mdi:checkbox-marked-circle" size="20" class="text-green-500"/>
-              <slot name="valueFour" mdc-unwrap="p"/>
-            </p>
-          </div>
-        </div>
-      </SectionContainer>
-    </SectionWrapper>
+  <div :class="classes.section">
+    <div :class="[classes.container, getWidth(props.containerWidth)]">
+      <p :class="[classes.value.base, classes.value.before]">
+        <Icon name="material-symbols:check-circle-rounded" size="1.25rem" :class="classes.value.icon"/>
+        <span :class="classes.value.label">{{ props.valueOne }}</span>
+      </p>
+      <p :class="[classes.value.base, classes.value.before]">
+        <Icon name="material-symbols:check-circle-rounded" size="1.25rem" :class="classes.value.icon"/>
+        <span :class="classes.value.label">{{ props.valueTwo }}</span>
+      </p>
+      <p :class="[classes.value.base, classes.value.before]">
+        <Icon name="material-symbols:check-circle-rounded" size="1.25rem" :class="classes.value.icon"/>
+        <span :class="classes.value.label">{{ props.valueThree }}</span>
+      </p>
+      <p :class="[classes.value.base, classes.value.before]">
+        <Icon name="material-symbols:check-circle-rounded" size="1.25rem" :class="classes.value.icon"/>
+        <span :class="classes.value.label">{{ props.valueFour }}</span>
+      </p>
+    </div>
+  </div>
 </template>
 
 <script setup lang="ts">
-defineProps({
+const props = defineProps({
   containerWidth: {
     type: String,
-    default: 'full'
+    default: 'two-thirds'
+  },
+  valueOne: {
+    type: String,
+    default: ''
+  },
+  valueTwo: {
+    type: String,
+    default: ''
+  },
+  valueThree: {
+    type: String,
+    default: ''
+  },
+  valueFour: {
+    type: String,
+    default: ''
   },
 });
+
+const classes = {
+  section: 'relative bg-secondary-900 py-2',
+  container: 'relative container flex justify-between mx-auto',
+  value: {
+    base: 'flex items-center',
+    before: 'before:absolute before:bg-gray-50 before:aspect-square before:w-4 before:rounded-full before:ml-0.5',
+    icon: 'flex-shrink-1 text-green-500 mr-1',
+    label: 'text-white'
+  }
+}
 </script>

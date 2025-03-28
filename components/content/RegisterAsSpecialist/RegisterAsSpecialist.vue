@@ -1,27 +1,35 @@
 <template>
-  <SectionWrapper class="relative">
-    <NuxtImg :src="imgUrl" class="absolute top-0 h-full w-full object-cover z-0"/>
-    <SectionContainer :width="containerWidth" class="bg-transparent relative w-[45%] z-10">
-      <div class="w-full">
-        <div class="container flex flex-col items-center text-white text-center">
-          <h3 class="text-4xl font-semibold mb-4"><slot name="title" mdc-unwrap="p"/></h3>
-          <p class="mb-6 text-lg"><slot name="content" mdc-unwrap="p"/></p>
-          <Button type="primary" href="#">Aanmelden als vakspecialist</Button>
-        </div>
-      </div>
-    </SectionContainer>
-  </SectionWrapper>
+  <div :class="classes.section">
+    <NuxtImg :src="props.image" :class="classes.image"/>
+    <div :class="[classes.container, getWidth(props.containerWidth)]">
+      <h3 :class="classes.title">{{ props.title }}</h3>
+      <p :class="classes.text"><slot mdc-unwrap="p"/></p>
+      <Button label="Inschrijven als vakspecialist" type="quaternary"/>
+    </div>
+  </div>
 </template>
 
 <script setup lang="ts">
-defineProps({
+const props = defineProps({
   containerWidth: {
     type: String,
     default: 'full'
   },
-  imgUrl: {
+  image: {
     type: String,
     default: '/'
   },
+  title: {
+    type: String,
+    default: ''
+  }
 });
+
+const classes = {
+  section: 'relative py-36',
+  image: 'absolute inset-0 object-cover h-full w-full z-0',
+  container: 'relative container mx-auto text-center text-white z-10',
+  title: 'text-4xl font-semibold mb-6',
+  text: 'text-lg mb-8'
+}
 </script>
