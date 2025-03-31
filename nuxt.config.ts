@@ -20,27 +20,6 @@ export default defineNuxtConfig({
         },
     },
 
-    apollo: {
-        clients: {
-            default: {
-                httpEndpoint: process.env.ENVIRONMENT === 'local'
-                    ? process.env.LOCAL_URL ?? ''
-                    : process.env.DEV_URL ?? '',
-                inMemoryCacheOptions: {
-                    typePolicies: {
-                        FilterItem: {
-                            keyFields: ['id', 'category']
-                        }
-                    }
-                },
-                connectToDevTools: true
-            },
-        },
-        defaultOptions: {
-            $query: {
-                fetchPolicy: 'cache-and-network',
-            }
-        },
-        connectToDevTools: true
-    },
+    // Styling
+    css: ['./css/tailwind.css'],
 })
