@@ -6,12 +6,20 @@
   <div v-if="product" class="container z-1 mx-auto pt-8 grid grid-cols-12 gap-6">
     <div class="col-span-1"/>
     <Card class="col-span-6">
-      <FormStepper v-model="step" :steps="steps"/>
       <Heading class="mb-8">Ontvang snel en gemakkelijk offertes voor {{ product.name.toLowerCase() }}!</Heading>
+      <hr class="my-4 border-gray-500">
+      <FormStepper v-model="step" :steps="steps"/>
       <FormLocation v-if="step === 0" v-model="input.location"/>
       <FormProduct v-else-if="step === 1" v-model="input.product" :productId="product.id"/>
       <FormCustomer v-else-if="step === 2" v-model="input.customer"/>
+      <div class="flex flex-row items-center justify-between mt-8">
 
+        <Button v-if="step !== 0" label="Terug" type="tertiary" @handleClick="handleStepBack()"/>
+        <span v-else/>
+        <Button v-if="step+1 !== steps.length" :label="steps[step]" type="secondary"
+                @handleClick="handleStepForward()"/>
+        <Button v-else label="Aanvraag versturen" type="primary"/>
+      </div>
     </Card>
     <div class="col-span-3 flex flex-col gap-6">
       <Card class="text-center">
