@@ -2,7 +2,6 @@
 
 export default defineNuxtConfig({
     extends: ['../_common'],
-    modules: ['@nuxt/content'],
     components: ['../_common/components'],
     devtools: {enabled: true},
     future: {
