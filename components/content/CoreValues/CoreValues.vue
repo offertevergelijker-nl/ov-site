@@ -46,7 +46,7 @@ const props = defineProps({
 });
 
 const classes = {
-  section: 'relative bg-secondary-900 py-2',
+  section: 'relative bg-gray-900 py-2',
   container: 'relative container flex justify-between mx-auto',
   value: {
     base: 'flex items-center',

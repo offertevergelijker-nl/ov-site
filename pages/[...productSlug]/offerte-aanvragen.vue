@@ -1,6 +1,6 @@
 <template>
   <ContentRenderer v-if="productInquiryPage" :value="productInquiryPage"/>
-  <p>Test</p>
+  {{productInquiryPage}}
 </template>
 <script lang="ts" setup>
 import {useAsyncData} from "#app";

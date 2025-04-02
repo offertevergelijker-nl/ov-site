@@ -1,11 +1,11 @@
 <template>
-  <div :class="[classes.container.base, classes.container.hover]">
+  <div :class="[classes.container.base]">
     <div :class="classes.content.base">
       <NuxtImg :src="post.image" :class="classes.image"/>
       <div :class="classes.content.inner">
-        <h5 :class="[classes.title.base, classes.title.hover]">{{ post.title }}</h5>
+        <h5 :class="[classes.title.base]">{{ post.title }}</h5>
         <p :class="classes.text">{{ post.content }}</p>
-        <Button @handleClick="navigateTo(post.link)" label="Lees verder" iconRight="material-symbols:chevron-right-rounded" type="secondary" isLink/>
+        <Button @handleClick="navigateTo(post.link)" label="Lees verder" size="lg" iconRight="material-symbols:chevron-right-rounded" type="secondary" isLink/>
       </div>
     </div>
   </div>
@@ -20,8 +20,7 @@ const props = defineProps<{
 
 const classes = {
   container: {
-    base: 'group relative top-0 shadow-xl rounded-lg transition-all duration-200',
-    hover: 'hover:shadow-2xl hover:-top-1'
+    base: 'relative bg-white rounded-lg',
   },
   content: {
     base: 'relative',
@@ -29,8 +28,7 @@ const classes = {
   },
   image: 'rounded-lg rounded-b-none aspect-video w-full object-cover',
   title: {
-    base: 'text-lg font-semibold mb-2 transition-all duration-200',
-    hover: 'group-hover:text-quaternary-500',
+    base: 'text-lg font-semibold mb-2',
   },
   text: 'text-lg line-clamp-3 overflow-hidden mb-6',
 }

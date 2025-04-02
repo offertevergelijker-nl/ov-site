@@ -11,7 +11,7 @@ export const blogPosts: BlogPost[] = [
     {
         id: 1,
         image: 'assets/home/photo_1.jpeg',
-        title: 'Modern Web Development with Nuxt 3',
+        title: 'Web Development with Nuxt 3',
         content: 'In this article, we explore the latest features of Nuxt 3 and how it enhances the Vue.js development experience. Learn about the new Composition API, auto-imports, and improved performance metrics.',
         link: '/blog/modern-web-development-nuxt-3',
         createdAt: new Date('2025-02-15')

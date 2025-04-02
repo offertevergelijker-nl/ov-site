@@ -6,15 +6,15 @@
 
 ::how-it-works{headline="Hoe werkt het" title="Gratis offertes aanvragen, geheel vrijblijvend!"}
 
-::how-it-works-column{icon="material-symbols:search-rounded" button="Zoek mijn product"}
+::how-it-works-column{icon="openmoji:magnifying-glass-tilted-right" button="Zoek mijn product"}
 Zoek naar het product of de dienst van jouw voorkeur en ga door met aanvragen.
 ::
 
-::how-it-works-column{icon="material-symbols:file-export-outline-rounded" button="Vergelijk offertes"}
+::how-it-works-column{icon="openmoji:open-mailbox-with-raised-flag" button="Vergelijk offertes"}
 Ontvang vrijblijvend en gratis offertes. Vergelijk deze en vind de beste deal voor jou!
 ::
 
-::how-it-works-column{icon="mdi:trophy-outline" button="Vraag offertes aan"}
+::how-it-works-column{icon="openmoji:trophy" button="Vraag offertes aan"}
 Ga naar het aanvraag formulier van jouw gewenste product of dienst en vul deze in.
 ::
 

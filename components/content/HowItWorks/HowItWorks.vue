@@ -1,22 +1,14 @@
 <template>
-  <div :class="classes.section">
+  <div :class="[classes.section, '']">
     <div :class="[classes.container, getWidth(props.containerWidth), 'text-center mb-12']">
-      <Headline :label="props.headline"/>
+      <Headline :label="props.headline" type="quaternary"/>
       <h3 :class="classes.title">{{ props.title }}</h3>
     </div>
-    <div :class="[classes.container, getWidth(props.containerWidth), 'flex justify-center gap-x-10']">
-      <div :class="[classes.column.container, 'w-1/3']">
-        <div :class="[classes.column.content, 'flex flex-col gap-y-8']">
-          <slot/>
-        </div>
-      </div>
-      <div :class="[classes.column.container, 'w-1/3']">
-        <div :class="[classes.column.content, 'flex flex-col gap-y-8']">
-          <slot/>
-        </div>
-      </div>
-      <div :class="[classes.column.container, 'w-1/3']">
-        <div :class="[classes.column.content, 'flex flex-col gap-y-8']">
+  </div>
+  <div :class="[classes.section, '!bg-secondary-100 pt-0']">
+    <div :class="[classes.container, getWidth(props.containerWidth), 'flex']">
+      <div :class="[classes.column.container, '-mt-24']">
+        <div :class="[classes.column.content, 'flex flex-row gap-x-8']">
           <slot/>
         </div>
       </div>
@@ -28,7 +20,7 @@
 const props = defineProps({
   containerWidth: {
     type: String,
-    default: 'full'
+    default: 'two-thirds'
   },
   headline: {
     type: String,
@@ -41,7 +33,7 @@ const props = defineProps({
 });
 
 const classes = {
-  section: 'relative py-24',
+  section: 'relative bg-white py-24',
   container: 'relative container mx-auto',
   column: {
     container: 'relative',

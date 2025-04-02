@@ -25,7 +25,7 @@ const props = defineProps({
 });
 
 const classes = {
-  section: 'relative',
+  section: 'relative bg-secondary-100 pb-24',
   container: 'relative container mx-auto',
   title: 'text-4xl font-semibold',
 }

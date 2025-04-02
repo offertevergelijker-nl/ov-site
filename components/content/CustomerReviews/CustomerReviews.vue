@@ -1,7 +1,7 @@
 <template>
   <div :class="classes.section">
     <div :class="[classes.container, getWidth(props.containerWidth), 'text-center mb-12']">
-      <Headline :label="props.headline"/>
+      <Headline :label="props.headline" type="quaternary"/>
       <h3 :class="classes.title">{{ props.title }}</h3>
     </div>
     <div :class="[classes.container, getWidth(props.containerWidth), 'flex gap-x-4 mb-12']">
@@ -33,7 +33,7 @@ const props = defineProps({
 });
 
 const classes = {
-  section: 'relative',
+  section: 'relative pb-24',
   container: 'relative container mx-auto',
   title: 'text-4xl font-semibold',
 }

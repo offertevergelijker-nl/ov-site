@@ -1,35 +1,51 @@
 <template>
-  <HeroWrapper class="relative" :class="beforeClasses">
-    <NuxtImg :src="imgUrl" class="absolute top-0 h-full w-full object-cover z-0" />
-    <HeroContainer :width="containerWidth" class="bg-transparent relative z-20">
-      <h2 class="text-6xl font-bold font-lato mb-4">
-        <ContentSlot name="heroTitle" unwrap="p" />
-      </h2>
-      <div class="flex justify-center gap-x-2 text-black mb-4">
-        <form class="bg-white">
-          <input type="text" placeholder="Jouw postcode...">
-          <button>Vergelijk offertes</button>
-        </form>
+  <div :class="[classes.section.base, classes.section.before]">
+    <NuxtImg :src="props.image" :class="classes.image"/>
+    <div :class="[classes.container, getWidth(props.containerWidth)]">
+      <div :class="[classes.column.container]">
+        <div :class="classes.column.content">
+          <h2 :class="classes.title">{{ props.title }}</h2>
+          <div :class="classes.form">
+            <FormSection>
+              <FormInput type="text" placeholder="Jouw postcode..." :colWidth="6"/>
+              <Button label="Vergelijk offertes" type="quaternary" fullWidth textCenter class="col-span-6"/>
+            </FormSection>
+            <p class="text-xs text-center text-gray-900 mt-2">Al je aanvragen zijn gratis en vrijblijvend</p>
+          </div>
+        </div>
       </div>
-      <p class="text-lg mb-8">Meer dan <span class="font-semibold">89.000</span> mensen gingen je voor.</p>
-    </HeroContainer>
-  </HeroWrapper>
+    </div>
+  </div>
 </template>
 
 <script setup lang="ts">
-defineProps({
+const props = defineProps({
   containerWidth: {
     type: String,
-    default: 'full'
+    default: 'three-quarters'
   },
-  imgUrl: {
+  image: {
     type: String,
     default: '/'
   },
+  title: {
+    type: String,
+    default: ''
+  },
 });
 
-const beforeClasses = `
-before:absolute before:top-0 before:bg-black before:opacity-25
-before:h-full before:w-full before:z-10
-`;
+const classes = {
+  section: {
+    base: 'relative py-36 bg-gray-100',
+    before: 'before:absolute before:inset-0 before:bg-gray-900/25 before:h-full before:w-full before:z-10'
+  },
+  image: 'absolute top-0 right-0 object-cover h-full w-full z-0',
+  container: 'relative container text-center text-white mx-auto z-20',
+  column: {
+    container: 'relative',
+    content: ''
+  },
+  title: 'text-7xl font-bold capitalize mb-6',
+  form: 'bg-white rounded-lg w-1/3 p-2 mx-auto mb-4',
+}
 </script>

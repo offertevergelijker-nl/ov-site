@@ -52,7 +52,7 @@ const classes = {
     content: 'relative'
   },
   title: 'text-4xl font-semibold mb-6',
-  intro: 'italic mb-2',
+  intro: 'relative font-medium mb-2 pl-5 before:absolute before:inset-0 before:bg-secondary-500 before:h-full before:w-1 before:z-10',
   text: 'text-lg mb-8'
 }
 </script>
